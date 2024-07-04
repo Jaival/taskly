@@ -7,3 +7,7 @@ coverage
 **/.hg
 
 **/node_modules
+
+.idea
+.vscode
+.next
