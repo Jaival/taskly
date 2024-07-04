@@ -1,8 +1,11 @@
+import Link from 'next/link';
+import { Separator } from './ui/separator';
+
 export default function Footer() {
   return (
     <div className="bg-gray dark:bg-black-light">
       <div className="max-w-6xl px-4 py-10 mx-auto md:py-20">
-        <div className="h-0.5 w-full bg-blue-line"></div>
+        <Separator className="h-0.5 w-full bg-amber-600"/>
         <div className="flex flex-col justify-between mt-8 space-y-4 md:space-y-0 md:flex-row md:items-center dark:text-gray">
           <div className='flex'>
             <span>
@@ -10,14 +13,14 @@ export default function Footer() {
             </span>
             {/* <span>&nbsp;Created by:&nbsp;</span> */}
             <span>
-              <div
-                // href={'https://jaivalsaija.vercel.app/'}
+              <Link
+                href={'https://jaivalsaija.vercel.app/'}
                 className="flex flex-row items-center space-x-4 group">
                 <span className="relative overflow-hidden">
                   <div className="absolute h-0.5 w-full bg-orange-700  bottom-0 transform -translate-x-24 group-hover:translate-x-0 transition duration-300"></div>
                 Jaival Saija.&nbsp;
                 </span>
-              </div>
+              </Link>
             </span>
           All Rights Reserved.
           </div>
